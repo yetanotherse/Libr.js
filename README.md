@@ -33,9 +33,21 @@ Libr(['jquery', 'jqueryui', 'bootstrap']);
 ## Options
 Libr accepts couple of optional parameters as shown below.
 * **mode** 
-`mode` accepts `dev` or `prod` as values for development or production environment respectively. If you have chosen the `dev` mode, Libr loads un-minified version of the files and in `prod` mode, it loads minified version of files.
+`mode` accepts `dev` or `prod` as values for development or production environment respectively. If you have chosen the `dev` mode, Libr loads un-minified version of the files and in `prod` mode, it loads minified version of files. Defaults to `dev`.
 * **appendTo**
-`appendTo` accepts `head` or `body` as values to specify whether you would like to include the files in your web page's head or body. 
+`appendTo` accepts `head` or `body` as values to specify whether you would like to include the files in your web page's head or body. Defaults to `head`.
+
+```
+var l = Libr([
+      'jquery', 
+      'jqueryui', 
+      'bootstrap'
+    ], {
+      mode: 'prod',
+      appendTo: 'body'
+    }
+  );
+```
 
 ## Supported Libraries
 Currently Libr supports the following libraries/frameworks
