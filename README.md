@@ -37,6 +37,7 @@ Libr accepts couple of optional parameters as shown below.
 * **appendTo**
 `appendTo` accepts `head` or `body` as values to specify whether you would like to include the files in your web page's head or body. Defaults to `head`.
 
+### Example usage with options
 ```
 var l = Libr([
       'jquery', 
@@ -46,7 +47,8 @@ var l = Libr([
       mode: 'prod',
       appendTo: 'body'
     }
-  );
+);
+l.load();
 ```
 
 ## Supported Libraries
