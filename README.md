@@ -9,14 +9,14 @@ var l = Libr(['jquery']);
 l.load();
 ```
 
-Yes, that's all. It'll include the latest version of jquery from cdnjs in your code. You can optionally pass the version of jquery if you need to work with a specific jquery version as shown below.
+It'll include the latest version of jquery from cdnjs in your code. You can optionally pass the version of desired library if you need to work with a specific version as shown below.
 
 ```
 var l = Libr(['jquery#1.9.1']);
 l.load();
 ```
 
-This will include jquery version 1.9.1. You can include multiple libraries as shown below.
+This will include jquery version 1.9.1. You can include multiple libraries as shown below with or without specifying the versions.
 
 ```
 var l = Libr(['jquery#1.9.1', 'jqueryui', 'underscore#1.6.0']);
