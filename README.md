@@ -62,5 +62,7 @@ Currently Libr supports the following libraries/frameworks
 * backbonejs (http://backbonejs.org/)
 * emberjs (http://emberjs.com/)
 * knockoutjs (http://knockoutjs.com/)
+* reactjs (https://facebook.github.io/react/)
+* d3js (https://d3js.org/)
 
 It's easy to add support for additional libraries. I have used [cdnjs] (https://cdnjs.com/) since it supports most number of javascript librraies and frameworks.

@@ -11,6 +11,8 @@
         'backbonejs', 
         'emberjs',
         'knockoutjs',
+        'reactjs',
+        'd3js'
     ];
     
     // maintain latest versions of supported libs
@@ -23,7 +25,9 @@
         angularjs: "1.4.10",
         backbonejs: "1.3.3",
         emberjs: "2.5.0",
-        knockoutjs: "3.4.0"
+        knockoutjs: "3.4.0",
+        reactjs: "15.0.1",
+        d3js: "3.5.16"
     }
     
     var CDNJS_PREFIX = 'https://cdnjs.cloudflare.com/ajax/libs/';
@@ -187,6 +191,22 @@
                             script.src = CDNJS_PREFIX+"knockout/"+version+"/knockout-"+(this.options.mode !== 'dev' ? 'min.' : '')+"js";
                         } else {
                             script.src = CDNJS_PREFIX+"knockout/"+latestVersion.knockoutjs+"/knockout-"+(this.options.mode !== 'dev' ? 'min.' : '')+"js";
+                        }
+                        break;
+                        
+                    case 'reactjs':
+                        if(version !== -1) {
+                            script.src = CDNJS_PREFIX+"react/"+version+"/react."+(this.options.mode !== 'dev' ? 'min.' : '')+"js";
+                        } else {
+                            script.src = CDNJS_PREFIX+"react/"+latestVersion.reactjs+"/react."+(this.options.mode !== 'dev' ? 'min.' : '')+"js";
+                        }
+                        break;
+                        
+                    case 'd3js':
+                        if(version !== -1) {
+                            script.src = CDNJS_PREFIX+"d3/"+version+"/d3."+(this.options.mode !== 'dev' ? 'min.' : '')+"js";
+                        } else {
+                            script.src = CDNJS_PREFIX+"d3/"+latestVersion.d3js+"/d3."+(this.options.mode !== 'dev' ? 'min.' : '')+"js";
                         }
                         break;
                         
