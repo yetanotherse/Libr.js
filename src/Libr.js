@@ -98,6 +98,7 @@
                     version = tmp[1].trim();
                 }
                 var script = global.document.createElement('script');
+                script.defer = true;
                 switch(library) {
                     case 'jquery':
                         if(version !== -1) {
