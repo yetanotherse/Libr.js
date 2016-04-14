@@ -66,3 +66,6 @@ Currently Libr supports the following libraries/frameworks
 * d3js (https://d3js.org/)
 
 It's easy to add support for additional libraries. I have used [cdnjs] (https://cdnjs.com/) since it supports most number of javascript librraies and frameworks.
+
+## Use case
+It's certainly not meant to be used in production environment but might come handy for developers and designers who need to quickly build a prototype or test something that require various javascript libraries and/or frameworks.
