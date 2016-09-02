@@ -28,7 +28,7 @@ l.load();
 ```
 Libr(['jquery', 'jqueryui', 'bootstrap']);
 ```
-* Libr includes CSS file for bootstrap and jqueryui so you need include them separately.
+* Libr includes CSS file for bootstrap and jqueryui so you need not include them separately.
 
 ## Options
 Libr accepts couple of optional parameters as shown below.
